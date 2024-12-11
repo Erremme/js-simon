@@ -13,26 +13,26 @@
      
 
 </head>
-<body>
+<body class="bg-dark">
 
-    <div class="container">
+    <div class="container bg-white">
         <div class="row mt-3">
             <div class="col text-center">
                 <h1 id="crono-time">0</h1>
-                <p>Inserisci tutti i numeri che ricordi (l'ordine non è importante)</p>
+                <p id="insert-number" class="d-none">Inserisci tutti i numeri che ricordi (l'ordine non è importante)</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 d-flex justify-content-around">
+            <div id="random-number" class="col-12 d-flex justify-content-around pb-3">
                <div class="px-3"><span id="first-number">1</span></div>
                <div class="px-3"><span id="second-number">1</span></div>
                <div class="px-3"><span id="third-number">1</span></div>
                <div class="px-3"><span id="fourth-number">1</span></div>
                <div class="px-3"><span id="fifth-number">1</span></div>
             </div>
-            <form>
-                <div class="col d-flex justify-content-around">
-                    <input type="number" id="first-number-user " class="form-control ms-input" value="1">
+            <form id="form-number" class="d-none">
+                <div id="input-number" class="col d-flex justify-content-around">
+                    <input type="number" id="first-number-user" class="form-control ms-input" value="5">
                     <input type="number" id="second-number-user" class="form-control ms-input" value="2" >
                     <input type="number" id="third-number-user" class="form-control ms-input" value="3">
                     <input type="number" id="fourth-number-user" class="form-control ms-input" value="4">
@@ -40,7 +40,7 @@
                 </div>
                  <div class="col text-center">
                     <button type="submit" id="btn" class="btn btn-primary">Conferma</button>
-                    <p>Hai indovinato 3 numeri ()</p>
+                    <p id="numbers-matched" class="d-none">Non hai indovinato nessun numero</p>
                  </div>
 
 
