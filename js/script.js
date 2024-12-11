@@ -86,7 +86,7 @@ for(i = 0; i <= random.length -1; i++){
     if(userNumber.includes(random[i])){
         numberFound.push(random[i])
         numbersMatchedElm.classList.remove("d-none")
-        numbersMatchedElm.innerHTML = `Hai indovinato ${numberFound.length} numeri  (${numberFound})`
+        numbersMatchedElm.innerHTML = `Hai indovinato ${numberFound.length} numeri!  (${numberFound})`
      }else{
         numbersMatchedElm.classList.remove("d-none")
          } 
